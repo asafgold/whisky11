@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arvo', serif;
+}
+div.wrap {
+    display: flex;
+    max-width:border 3000px;
+    margin: 0 auto;
+    border: 13px double burlywood;
+    padding: 60px;
+    box-sizing: border-box;
+}
+div.column {
+    flex: 1;
+    padding:15px;
+    margin-left:90px;
+}
+div.column-2 {
+    flex: 3;
+    margin-left:50px;
+}
+h1 { 
+    font-size:4vw;
+    font-weight: lighter;
+    letter-spacing: 37px;
+    border-bottom: 3px solid burlywood;
+  padding:30px;
+    text-align: center;
+}
+div.description{
+    font-size: 15pt;
+    font-weight:lighter;
+    letter-spacing: 6px;
+    line-height: 36px;
+    border-top: 3px solid burlywood;
+    margin-left:10px;
+    margin-top: 10px;
+    ;
+ 
+} 
+div.properties{
+    font-size: 22pt;
+    letter-spacing: 4px;
+    align-content: center;
+    padding:1px;
+
+
+}
+
+div.properties ul {
+    list-style: none;
+    padding:0;
+    margin-top:-30px;
+}
+
+div.properties ul li {
+    background-color: beige; opacity: 80%;
+    text-align: center;
+    margin: 25px 0;
+    padding: 47px 0;
+}
+
+div.image {
+    max-width: 220px;
+    padding:15px;
+    margin:  auto;
+}
+
+img {
+    width: 115%;
+    margin-top: 80px;
+    margin-left: -40px;
+
+}

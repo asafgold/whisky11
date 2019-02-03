@@ -1,0 +1,77 @@
+$nav-height: 3em;
+$nav-scrollbar-height: 1.5em;
+$nav-shadow-width: 4.5em;
+
+.nav {
+  position: relative;
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+
+  @media (pointer: coarse) {
+    // Hide the scrollbar on devices with touch input.
+    overflow: hidden;
+  }
+}
+
+.nav__list {
+  position: relative;
+  display: flex;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  @media (pointer: coarse) {
+    // Move the scrollbar outside of the visible area
+    // by making the element taller than the parent element.
+    height: $nav-height + $nav-scrollbar-height;
+  }
+}
+
+.nav__item {
+  flex-shrink: 0;
+  
+  &:not(:first-child) {
+    margin-left: 1em;
+  }
+}
+
+.nav__link {
+  display: inline-flex;
+  height: $nav-height;
+  align-items: center;
+  text-decoration: none;
+  
+  &.is-active {
+    font-weight: bold;
+  }
+}
+
+.nav__shadow {
+  width: $nav-shadow-width;
+  height: $nav-height;
+  position: absolute;
+  top: 0;
+  // Using 0% rgba value instead of transparent because of Safari.
+  background: linear-gradient(to right, rgba(#fff, 0), #fff 80%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s;
+  
+  &.is-visible {
+    opacity: 1;
+  }
+}
+
+.nav__shadow--start {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nav__shadow--end {
+  right: 0;

@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arvo', serif;
+
+    
+}
+div.wrap {
+    display: flex;
+    border: solid 15px burlywood;
+    box-sizing: border-box;
+
+  
+}
+div.column-1 {
+    margin: -30px; -20px;
+    padding:10px; 20px;
+    text-align: center;
+
+    flex: ;
+
+}
+
+div.column-2 {
+    flex: ;
+text-align: center;}
+
+ 
+ 
+} 
+div.properties{
+    font-size: 22pt;
+    letter-spacing: 4px;
+    text-align: center;
+   
+
+
+
+}
+
+div.properties ul {
+    padding: 20px 40px;
+
+
+}
+
+div.properties ul li {
+    font-size:120px;
+   
+    line-height: 50px;
+   border: solid 6px  burlywood;
+    margin: -10;
+    padding: 138px 200px;
+    letter-spacing: 4px;
+    list-style: none;
+    height: 455px;
+    
+}
+
+div.scrollmenu {
+    style:none;
+  overflow: auto;
+  white-space: nowrap;
+  font-size: 50pt;
+  font-weight: lighter;
+{
+    box-sizing: 200px border-box;
+   
+
+}
+
+div.scrollmenu  {
+  display: flex 3;
+  text-align: center;
+  padding: 10px;
+  
+
+
+
+
+
+}
+
+div.scrollmenua:hover {
+
+
+
+}
+
+
+
+
+
+
+
